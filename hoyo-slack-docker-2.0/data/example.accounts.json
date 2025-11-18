@@ -1,0 +1,20 @@
+[
+  {
+    "name": "AltAccount",
+    "uid": "123456789",
+    "ltuid_v2": "AAAAA",
+    "ltoken_v2": "BBBBB",
+    "db_name": "genshin_123456789.sqlite3",
+    "slack_mention": "<@U0987ZYXW>",
+    "tz": "America/Chicago"
+  },
+ {
+    "name": "AltAccount",
+    "uid": "123456789",
+    "ltuid_v2": "AAAAA",
+    "ltoken_v2": "BBBBB",
+    "db_name": "genshin_123456789.sqlite3",
+    "slack_mention": "<@U0987ZYXW>",
+    "tz": "America/Chicago"
+  }
+]

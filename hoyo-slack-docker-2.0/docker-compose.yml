@@ -1,0 +1,23 @@
+services:
+  hoyo-slack:
+    build: .
+    container_name: hoyo-slack-2
+
+    # Load secrets + cookies from .env (not committed to git)
+    env_file:
+      - .env
+
+    # Extra config you’re OK with living in compose
+    environment:
+      # How often to run (in hours)
+      SCHEDULE_HOURS: "1"
+      # Optional: where data lives inside the container
+      DATA_DIR: /data
+      DB_DIR: /data/db
+      POST_ON_START: "true"
+
+    # Persist accounts.json, DBs, and state.json on the host
+    volumes:
+      - ./data:/data
+
+    restart: unless-stopped
